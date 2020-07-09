@@ -1,5 +1,5 @@
 # Plant-Diseases-Detection-Django
-A Web based deep learning model API for plant disease detection and classification from leaves
+**A Web based deep learning model API for plant disease detection and classification from leaves**
 
 First, the dataset was collected from [here](https://github.com/spMohanty/PlantVillage-Datasethttps://github.com/spMohanty/PlantVillage-Dataset) containing 54,306 images of 14 different crops, then split into 80% training and 20% validation set.
 
