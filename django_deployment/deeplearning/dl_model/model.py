@@ -23,9 +23,10 @@ class PretrainedModel(nn.Module):
 def load_model():
      """Load Pytorch model."""
      global model
-     # Load model with its weights
+     # Load and initialize the model
      model = NeuralNetClassifier(PretrainedModel, criterion=nn.CrossEntropyLoss, module__output_features=38)
      model.initialize()
+     # load up the saved model weights
      model.load_params(f_params='deeplearning/dl_model/model_params.pt',
                        f_optimizer='deeplearning/dl_model/model_optimizer.pt',
                        f_history='deeplearning/dl_model/model_history.json')
