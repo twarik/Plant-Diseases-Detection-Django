@@ -1,0 +1,37 @@
+{% extends "deeplearning/base.html" %}
+{% load static %}
+	    {% block content %}
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h2 class="heading">A Web based deep learning model API for plant disease detection and classification from leaves</h2>
+			    <div class="intro">Welcome to my API for plant disease detection. </div>
+		    </div><!--//container-->
+	    </section>
+	    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+			    <div class="item mb-5">
+				    <div class="media">
+              <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{% static 'deeplearning/images/Plant-diseases-detection.jpg' %}" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1"><a href="{% url 'predict'%}">Plant diseases detection</a></h3>
+						    <div class="intro">This is my first deployment of a deep learning model (PyTorch) for Classification of 14 crop species. The model leverages the Microsoft’s ResNet50 architecture and applies the ImageNet weights, extra training is done through transfer learning, hence it can detect and classify crop leaves into 38 different classes (crop species and status).</div>
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+			    <div class="item">
+				    <div class="media">
+              <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{% static 'deeplearning/images/PlantVillage-Dataset.jpg' %}" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1"><a href="{% url 'PlantVillage' %}">About PlantVillage Dataset</a></h3>
+						    <div class="intro">In order to ease plant disease diagnosis, the <a href="https://plantvillage.psu.edu/" target="_blank" >PlantVillage project </a>began collecting and later opensourced images of crops for both healthy and diseased plant.
+                The <a href="https://github.com/spMohanty/PlantVillage-Datasethttps://github.com/spMohanty/PlantVillage-Dataset" target="_blank"> PlantVillage dataset</a> contains images of leaves corresponding to 14 crop species: Apple, Blueberry, Cherry, Grape, Orange, Peach, Bell Pepper, Potato, Raspberry, Soybean, Squash, Strawberry, and Tomato.
+                The images are divided into 38 classes of crop disease pairs <a class="more-link" href="{% url 'PlantVillage'%}">Read more &rarr;</a></div>
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+			    <nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-next nav-item nav-link rounded" href="{% url 'predict'%}">Predict crop disease<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+		    </div>
+	    </section>
+{% endblock %}
