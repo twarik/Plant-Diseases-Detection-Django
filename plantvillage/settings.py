@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')h1t(c=#@_bjq6-rqvl3h5@-g_5e$)xp=fv8gg5^i00qt@i3%&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://plant-diseases-detection.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
