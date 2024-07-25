@@ -3,6 +3,6 @@ Pillow
 Django
 skorch==0.7.0
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.4.0+cpu
+torch==2.2.0
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torchvision==0.5.0+cpu
